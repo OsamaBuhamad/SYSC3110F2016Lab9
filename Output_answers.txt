@@ -1,0 +1,30 @@
+Question1: Console output
+CHARS: 
+	
+CHARS: 3
+CHARS: 
+		
+CHARS: "Michael"
+CHARS: 
+
+
+Question2:
+when the readSAX is called in the main method
+
+Question3: console output
+Root: tutorial
+Child: #text-->
+	
+Child: number-->3
+Child: #text-->
+		
+Child: ta-->Michael
+Child: #text-->
+
+Question4: 
+the root node which is tutorial 
+
+
+Q5:
+DOM iterates through the root element 
+SAX get each element in the file 
