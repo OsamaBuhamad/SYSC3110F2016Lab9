@@ -182,6 +182,18 @@ public void exportToXMLFile(){
     
 	}
 	
+	public void importDOMXML() throws Exception{
+		XMLParse p = new XMLParse();
+		File outputFile =  new File("outputXML.xml");
+		p.readDOM(outputFile);
+	}
+	
+	public void importSAXXML() throws Exception{
+		XMLParse p = new XMLParse();
+		File outputFile =  new File("outputXML.xml");
+		p.readSAX(outputFile);
+	}
+	
 	
 
 	public void printimportedList(){
@@ -232,10 +244,9 @@ public void objectExport(){
 		System.out.println(buddy.toXML());
 		ab.export();
 		ab.exportToXMLFile();
+		ab.importDOMXML();
+		ab.importSAXXML();
 		
-		XMLParse p = new XMLParse();
-		File outputFile =  new File("outputXML.xml");
-		p.readDOM(outputFile);
 		
 	//	buddy = BuddyInfo.importt(input); 
 //		System.out.println(buddy.toString());
